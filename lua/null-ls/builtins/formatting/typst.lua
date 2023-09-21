@@ -10,11 +10,11 @@ return h.make_builtin({
     description = "A typst formatter",
   },
   method = FORMATTING,
-  filetypes = {},
+  filetypes = { "typ", "typst" },
   generator_opts = {
     command = "typstfmt",
-    args = {},
-    to_stdin = true,
+    args = { "$FILENAME" },
+    to_temp_file = true
   },
   factory = h.formatter_factory,
 })
