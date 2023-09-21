@@ -12,7 +12,7 @@ return h.make_builtin({
   method = FORMATTING,
   filetypes = {},
   generator_opts = {
-    command = "$HOME/.cargo/bin/typstfmt",
+    command = "typstfmt",
     args = {},
     to_stdin = true,
   },
